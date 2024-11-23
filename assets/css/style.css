@@ -1468,4 +1468,86 @@ body {
 
   .blog-card .card-title { --fs-4: 2.4rem; }
 
+
+/* General Styling for the FAQ Section */
+.mortgage-faq {
+  background-color: #f4f4f4; /* Light background color for the FAQ section */
+  padding: 80px 0;
+}
+
+.mortgage-faq .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark color for the title */
+  margin-bottom: 20px;
+}
+
+/* Styling the FAQ List */
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-item {
+  margin-bottom: 15px; /* Space between FAQ items */
+}
+
+/* Styling the Questions */
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff; /* Blue color for questions */
+  background-color: #fff; /* White background for questions */
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white; /* White text color on hover */
+}
+
+/* Styling the Answers (Initially hidden) */
+.faq-answer {
+  font-size: 1rem;
+  color: #555; /* Lighter text color for the answers */
+  padding: 10px 15px;
+  margin-top: 10px;
+  display: none; /* Initially hide answers */
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+}
+
+/* When the answer is visible */
+.faq-answer.open {
+  display: block; /* Ensure the answer is displayed */
+  padding: 10px 15px; /* Add padding when revealed */
+  background-color: transparent; /* No background color */
+  border: none; /* No border */
+}
+
+/* Adjusting for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mortgage-faq .section-title {
+    font-size: 1.5rem; /* Smaller font size for the title */
+  }
+
+  .faq-question {
+    font-size: 1.1rem; /* Smaller font size for questions on mobile */
+    padding: 8px 12px; /* Slightly smaller padding */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Smaller font size for answers on mobile */
+    padding: 8px 12px; /* Slightly smaller padding for answers */
+  }
+
+  .faq-item {
+    margin-bottom: 10px; /* Less space between items */
+  }
+}
+
 }
